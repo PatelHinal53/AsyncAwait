@@ -51,16 +51,16 @@ namespace AsyncAwait
         {
             public async Task high()
             {
-                int a = await doSomethingAsync(5);
+                int a = await SomethingAsync(5);
                 return;
             }
-            private async Task<int> doSomethingAsync(int v)
+            private async Task<int> SomethingAsync(int v)
             {
                 return await Task.Run(() =>
                 {
 
                     Thread.Sleep(1000);
-                    Console.WriteLine("\n doSomethingAsync");
+                    Console.WriteLine("\n HSomethingAsync");
                     Console.Write("\n " + (v * 2));
                     return v * 2;
 
