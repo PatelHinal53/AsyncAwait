@@ -25,7 +25,7 @@ namespace AsyncAwait
         {
             await Task.Run(() =>
             {
-                for (int i = 0; i < 100; i++)
+                for (int i = 0; i < 10; i++)
                 {
                     Thread.Sleep(5000);
                     Console.WriteLine("\n Method do high");
@@ -38,7 +38,7 @@ namespace AsyncAwait
 
         private static void simple()
         {
-            for (int i = 0; i < 25; i++)
+            for (int i = 0; i < 5; i++)
             {
                 Thread.Sleep(5000);
                 Console.WriteLine("\n Method do simple");
